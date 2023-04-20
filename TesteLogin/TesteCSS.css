@@ -18,7 +18,7 @@ body
 {
     position: relative;
     width: 380px;
-    height: 420px;
+    height: 500px;
     background: #0000;
     border-radius: 8px;
     overflow: hidden;
@@ -162,7 +162,7 @@ body
 .box form .inputbox input:valid ~ span,
 .box form .inputbox input:focus ~ span
 {
-    color: blue;
+    color: #fff;
     font-size: 0.75em;
     transform: translateY(-40px);
 }
