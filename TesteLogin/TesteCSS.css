@@ -1,3 +1,10 @@
+/* Color
+verde agua: #45f3ff
+verde fluorescente: #00ff7f
+azul profundo: #0000ff*/
+
+/* INÍCIO DA TELA DE LOGIN */
+
 body{
     margin: 0;
     padding: 0;
@@ -14,6 +21,16 @@ body
     background: #23242a; 
 }
 
+p
+{
+    justify-content: center;
+    color: #2732ff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
 .box
 {
     position: relative;
@@ -25,6 +42,8 @@ body
 }
 
 .box::before
+/* Um dos quadrados (A cobrinha)*/
+
 {
     content: '';
     position: absolute;
@@ -33,13 +52,17 @@ body
     width: 380px;
     height: 420px;
     background: linear-gradient(0deg, transparent
-    , transparent, #45f3ff, #45f3ff, #45f3ff);
+    , transparent, #0000ff, #00ff7f, #00ff7f);
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
 }
 
+
+
 .box::after
+/* Um dos quadrados (A cobrinha)*/
+
 {
     content: '';
     position: absolute;
@@ -48,20 +71,22 @@ body
     width: 380px;
     height: 420px;
     background: linear-gradient(0deg, transparent
-    , transparent, #ff2770, #ff2770, #ff2770);
+    , transparent, #00ff7f, #0000ff, #0000ff);
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay: -3s;
 }
-.boderLine
+.Borda
 {
     position: absolute;
     inset:0;
     top: 0;
 }
 
-.boderLine::before
+.Borda::before
+/* Um dos quadrados (A cobrinha)*/
+
 {
     content: '';
     position: absolute;
@@ -70,14 +95,16 @@ body
     width: 380px;
     height: 420px;
     background: linear-gradient(0deg, transparent
-    , transparent, #ff2770, #ff2770, #ff2770);
+    , transparent, #0000ff, #00ff7f, #00ff7f);
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay: -1.5s;
 }
 
-.boderLine::after
+.Borda::after
+/* Um dos quadrados (A cobrinha) */
+
 {
     content: '';
     position: absolute;
@@ -86,7 +113,7 @@ body
     width: 380px;
     height: 420px;
     background: linear-gradient(0deg, transparent
-    , transparent, #ff2770, #ff2770, #ff2770);
+    , transparent, #00ff7f, #0000ff, #0000ff);
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
@@ -94,6 +121,8 @@ body
 }
 
 @keyframes animate
+/* Animação dos quadrados rodando (as cobrinhas) */
+
 {
     0%
     {
@@ -105,7 +134,9 @@ body
     }
 }
 
-.box form{
+.box form
+/* A caixa de Login ("Dentro das cobrinhas") */
+{
     position: absolute;
     inset: 4px;
     background: #222;
@@ -117,11 +148,14 @@ body
 }
 
 .box form h2
+/* É o "Login" */
 {
+    font-style: oblique;
     color: #fff;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
+    
 }
 
 .box form .inputbox
@@ -148,6 +182,8 @@ body
 }
 
 .box form .inputbox span
+/* Essse é o "Nome do usuário" e "senha" */
+
 {
     position: absolute;
     left: 0;
@@ -161,6 +197,8 @@ body
 
 .box form .inputbox input:valid ~ span,
 .box form .inputbox input:focus ~ span
+/* Esse é o "Nome do usuário" e "Senha" depois que é clicado para escrever */
+
 {
     color: #fff;
     font-size: 0.75em;
@@ -189,20 +227,28 @@ box form .Links
     display: flex;
     justify-content: space-between;
 }
+
 .box form .Links a
+/* Modificar os links */
+
 {
-    margin: 10px 0;
+    margin: auto;
+    width: 50%;
     font-size: 0.75em;
     color: aqua;
     text-decoration: none;
+    padding: center;
+    
 }
 
 .box form .Links a:hover,
 .box form .Links a:nth-child(2)
 {
-    color: #fff;
+    color: #ff009d;
 }
 .box form input[type="submit"]
+/* Botão de Login */
+
 {
 border-color: none;
 outline: none;
@@ -217,5 +263,7 @@ margin-top: 10px
 }
 .box form input[type="submit"]:active
 {
-
+    opacity: 0.5;
 }
+
+/* FIM DA TELA DE LOGIN */
