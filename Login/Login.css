@@ -133,7 +133,7 @@ h3
     width: 380px;
     height: 420px;
     background: linear-gradient(0deg, transparent
-    , transparent, #ff007f, #0000ff, #0000ff,); /* verde 00ff7f */
+    , transparent, #ff007f, #0000ff, #0000ff); /* verde 00ff7f */
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
