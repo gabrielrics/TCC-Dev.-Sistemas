@@ -5,11 +5,21 @@ azul profundo: #0000ff*/
 
 /* INÍCIO DA TELA DE LOGIN */
 
+div{
+    display: flex;
+    padding: 10px;
+}
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+img{
+    position: absolute;
+
 }
 
 body
@@ -18,7 +28,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #23242a; 
+    background: #23242a;
 }
 
 
@@ -29,12 +39,12 @@ body
     color: #fff;
     font-weight: 500;
     text-align: center;
-    letter-spacing: 0.1em; 
+    letter-spacing: 0.1em;
 }
 
 h3
 {
-    color: #2732ff;
+    color: #c1c1c1;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -123,7 +133,7 @@ h3
     width: 380px;
     height: 420px;
     background: linear-gradient(0deg, transparent
-    , transparent, #ff007f, #0000ff, #0000ff); /* verde 00ff7f */
+    , transparent, #ff007f, #0000ff, #0000ff,); /* verde 00ff7f */
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
@@ -234,11 +244,12 @@ h3
 
 {
     margin: auto;
-    font-size: 0.85em;
+    font-size: 0.90em;
     color: aqua;
     text-decoration: none;
     text-align: center;
     justify-content: center;
+    font-style: italic;
 }
 
 .box form .Links a:hover,
