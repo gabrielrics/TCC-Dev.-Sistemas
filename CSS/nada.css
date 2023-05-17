@@ -1,0 +1,375 @@
+/* Color
+verde agua: #45f3ff
+verde fluorescente: #00ff7f
+azul profundo: #0000ff*/
+
+/* INÍCIO DA TELA DE LOGIN */
+
+div{
+    display: flex;
+    padding: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+body
+{
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../img/Fundo\ Programação.gif");
+
+    /*background-color: #000;  /*343434*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    align-content: center;
+}
+
+
+
+.box form h2
+/* É o "Login" */ /* */
+{
+    font-style: oblique;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+h3
+{
+    color: #c1c1c1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.box
+{
+    position: relative;
+    width: 380px;
+    height: 500px;
+    background: #343434;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box::before
+/* Um dos quadrados (A cobrinha)*/
+
+{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent
+    , transparent, #0000ff, #ff007f, #ff007f);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+
+
+.box::after
+/* Um dos quadrados (A cobrinha)*/
+
+{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent
+    , transparent, #ff007f, #0000ff, #0000ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+.Borda
+{
+    position: absolute;
+    inset:0;
+    top: 0;
+}
+
+.Borda::before
+/* Um dos quadrados (A cobrinha)*/
+
+{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent
+    , transparent, #0000ff, #ff007f , #ff007f );
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+
+.Borda::after
+/* Um dos quadrados (A cobrinha) */
+
+{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent
+    , transparent, #ff007f, #0000ff, #0000ff); /* verde 00ff7f */
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+}
+
+@keyframes animate
+/* Animação dos quadrados rodando (as cobrinhas) */
+
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.box form
+/* A caixa de Login ("Dentro das cobrinhas") */
+{
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.box form .inputbox
+{
+    position: relative;
+    width: 300px;
+    margin-top: 45px;
+}
+
+.box form .inputbox input
+{
+    position: relative;
+    width: 100%;
+    padding: 20px 0px 20px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.05s;
+    z-index: 10;
+}
+
+.box form .inputbox span
+/* Essse é o "Nome do usuário" e "senha" */
+
+{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.10em;
+    transition: 0.05s;
+}
+
+.box form .inputbox input:valid ~ span,
+.box form .inputbox input:focus ~ span
+/* Esse é o "Nome do usuário" e "Senha" depois que é clicado para escrever */
+
+{
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-40px);
+}
+.box form .inputbox i
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.box form .inputbox input:valid ~ i,
+.box form .inputbox input:focus ~ i
+{
+    height: 45px;
+}
+
+.box form .Links
+{
+    display: center;
+    justify-content: center;
+}
+
+.box form .Links a
+/* Modificar os links */
+
+{
+    margin: auto;
+    font-size: 0.90em;
+    color: aqua;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    font-style: italic;
+}
+
+.box form .Links a:hover,
+.box form .Links a:nth-child(2)
+{
+    color: #ff009d;
+    
+}
+
+
+.box form input[type="submit"]
+/* Botão de Login */
+
+{
+border-color: none;
+outline: none;
+padding: 9px 25px;
+background: #14ffff;
+cursor: pointer;
+font-size: 0.9em;
+border-radius: 4px;
+font-weight: 600;
+width: 170px;
+margin-top: 10px;
+justify-content: center;
+
+}
+
+.box form input[type="submit"]:active
+{
+    opacity: 0.5;
+}
+
+/* FIM DA TELA DE LOGIN */
+
+
+.box {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .Borda {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #f38181;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  .form {
+    width: 100%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .form input {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    background-color: #f38181;
+  }
+  
+  .form label {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid white;
+  }
+  
+  .form label::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #fce38a;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+  }
+  
+  .content-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .form input:focus {
+    outline: none;
+  }
+  
+  .form input:focus + span .content-name,
+  .form input:valid + span .content-name {
+    transform: translateY(-150%);
+    font-size: 14px;
+    left: 0px;
+    color: #fce38a;
+  }
+  
+  .form input:focus + span::after,
+  .form input:valid + span::after {
+    transform: translateX(0%);
+  }
