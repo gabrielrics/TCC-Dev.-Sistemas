@@ -41,7 +41,7 @@
 		<div class="container">
 			<div class="full-height">
 				<div class="center-box">
-					<h6><span>Log In </span><span>Sign Up</span></h6>
+					<h2><span>Login </span><span>Cadastro</span></h2>
 					<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
 					<label for="reg-log"></label>
 					<div class="card-3d-wrap">
@@ -49,7 +49,7 @@
 							<div class="card-front">
 								<div class="center-wrap">
 									<div class="section text-center">
-										<h4>Log In</h4>
+										<h4>Login</h4>
 										<form action="" method="post">
 											<div class="msg-error">
 												<?php
@@ -100,7 +100,7 @@
 							<div class="card-back">
 								<div class="center-wrap">
 									<div class="section text-center">
-										<h4>Sign Up</h4>
+										<h4>Cadastro</h4>
 										<form action="salvar-usuario.php" onsubmit="sucesso()"  method="post">
 											<div class="form-group">
 												<input type="text" name="regName" required class="form-style" placeholder="Seu Username" id="regName" autocomplete="off">
@@ -129,6 +129,6 @@
 			</div>
 		</div>
 	</div>
-<?php include("../estruturas/rodape-form.php")?>
+	
 </body>
 </html>
